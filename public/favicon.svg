@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280" width="1280" height="1280">
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #e8511e } 
+	</style>
+	<path id="Capa 1" class="s0" d="m512 111h162v781l-206-87 2-430-47 22-1 386-155-68v-258l-56 28-2 516-187-85-2-564zm128 849v232l-369-162-2-244z"/>
+	<path id="Relleno de color sólido 1" class="s1" d="m640 960l421-212-1-58-89 47-9-3-1-216 6-5 284 97 2 297-613 285zm610-411l1-199-510-237-7 5v710l8 7 139-72v-373z"/>
+</svg>

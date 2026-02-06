@@ -1,0 +1,214 @@
+<section class="instalaciones" id="instalaciones">
+  <h2>Instalaciones Industriales</h2>
+  <p class="section-intro">
+    Diseño, fabricación e instalación de sistemas completos para plantas industriales, 
+    almacenes y operaciones manufactureras.
+  </p>
+
+  <div class="servicios-container">
+    <div class="servicio-categoria">
+      <h3>Sistemas de Ventilación y Extracción</h3>
+      <ul class="servicio-list">
+        <li>
+          <span class="servicio-nombre">Ductería industrial</span>
+          <span class="servicio-desc">Fabricación e instalación en acero al carbón, acero inoxidable y galvanizado. Diámetros de 4" a 72".</span>
+        </li>
+        <li>
+          <span class="servicio-nombre">Extractores industriales</span>
+          <span class="servicio-desc">Instalación de equipos de extracción de humos, polvos y gases. Montaje de ventiladores centrífugas y axiales.</span>
+        </li>
+        <li>
+          <span class="servicio-nombre">Trenes de filtraje</span>
+          <span class="servicio-desc">Instalación de sistemas de filtrado de aire. Mangas, ciclones y equipos de purificación.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="servicio-categoria">
+      <h3>Fabricación Metalmecánica</h3>
+      <ul class="servicio-list">
+        <li>
+          <span class="servicio-nombre">Herrería industrial</span>
+          <span class="servicio-desc">Estructuras metálicas, barandales, escaleras, plataformas y soportes para equipos.</span>
+        </li>
+        <li>
+          <span class="servicio-nombre">Pailería industrial</span>
+          <span class="servicio-desc">Fabricación de tanques, tolvas, contenedores y recipientes a presión según especificación.</span>
+        </li>
+        <li>
+          <span class="servicio-nombre">Soldadura certificada</span>
+          <span class="servicio-desc">Procesos SMAW, GMAW, GTAW. Trabajos en acero al carbón, inoxidable y aluminio.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="servicio-categoria">
+      <h3>Infraestructura y Edificaciones</h3>
+      <ul class="servicio-list">
+        <li>
+          <span class="servicio-nombre">Cámaras frías</span>
+          <span class="servicio-desc">Construcción de cuartos fríos para almacenamiento. Panel aislante y sistemas de refrigeración.</span>
+        </li>
+        <li>
+          <span class="servicio-nombre">Casetas de vigilancia</span>
+          <span class="servicio-desc">Fabricación e instalación de módulos prefabricados metálicos para seguridad industrial.</span>
+        </li>
+        <li>
+          <span class="servicio-nombre">Techumbres industriales</span>
+          <span class="servicio-desc">Estructuras metálicas y cubierta. Lámina acanalada, losacero y panel termoaislante.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="servicio-categoria">
+      <h3>Eficiencia Energética</h3>
+      <ul class="servicio-list">
+        <li>
+          <span class="servicio-nombre">Proyectos de iluminación LED</span>
+          <span class="servicio-desc">Sustitución de luminarias convencionales por tecnología LED industrial. Análisis de retorno de inversión.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta-container">
+    <a class="btn" href="https://wa.me/528186908682?text=Hola,%20me%20gustaría%20información%20sobre%20un%20servicio">
+      Solicitar información técnica
+    </a>
+  </div>
+</section>
+
+<style>
+.instalaciones {
+  background: var(--dark);
+}
+
+.section-intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.servicio-categoria {
+  background: var(--gray-dark);
+  padding: 2rem;
+  border-top: 3px solid var(--orange);
+}
+
+.servicio-categoria h3 {
+  font-size: 1.375rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.servicio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.servicio-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.servicio-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.servicio-nombre {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.servicio-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.cta-container {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .servicios-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .servicio-categoria {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .servicios-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-intro {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
+
+  .servicios-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .servicio-categoria {
+    padding: 1.5rem;
+  }
+
+  .servicio-categoria h3 {
+    font-size: 1.25rem;
+  }
+
+  .servicio-nombre {
+    font-size: 1.0625rem;
+  }
+
+  .servicio-desc {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-container {
+    gap: 1.5rem;
+  }
+
+  .servicio-categoria {
+    padding: 1.25rem;
+  }
+
+  .servicio-list {
+    gap: 1.25rem;
+  }
+
+  .servicio-list li {
+    padding-bottom: 1.25rem;
+  }
+}
+</style>

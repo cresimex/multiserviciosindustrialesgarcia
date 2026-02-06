@@ -1,0 +1,198 @@
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>Infraestructura Industrial<br/> para Operaciones Reales</h1>
+    <p class="hero-lead">
+      Fabricación, instalación y mantenimiento de sistemas industriales en Monterrey y zona metropolitana.
+      <strong>25 años ejecutando proyectos técnicos.</strong>
+    </p>
+    <div class="hero-specs">
+      <div class="spec-item">
+        <span class="spec-number">25+</span>
+        <span class="spec-label">Años de operación</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-number">500+</span>
+        <span class="spec-label">Proyectos ejecutados</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-number">100%</span>
+        <span class="spec-label">Monterrey y área metropolitana</span>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/528186908682?text=Hola,%20me%20gustaría%20información%20sobre%20un%20servicio">
+      Solicitar cotización
+    </a>
+  </div>
+</section>
+
+<style>
+.hero {
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 26, 26, 0.85) 100%),
+              url('/img/hero-image.jpeg') center/cover no-repeat;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(200, 90, 26, 0.03) 2px, rgba(200, 90, 26, 0.03) 4px);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+  max-width: 700px;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-lead strong {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.hero-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* Columnas de ancho fijo */
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem 10rem; /* Ajusta el padding si lo necesitas más compacto */
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(10, 10, 10, 0.6);
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.spec-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--orange);
+  line-height: 1;
+}
+
+.spec-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-lead {
+    font-size: 1.125rem;
+  }
+
+  .hero-specs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .spec-number {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding: 2rem 5%;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero h1 br {
+    display: none; /* Quita el salto de línea en móvil */
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-specs {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .spec-item {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .spec-item:last-child {
+    border-bottom: none;
+  }
+
+  .spec-number {
+    font-size: 2.5rem;
+  }
+
+  .spec-label {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 90px;
+  }
+
+  .hero h1 {
+    font-size: 1.875rem;
+  }
+
+  .hero-specs {
+    padding: 1.25rem;
+  }
+
+  .spec-number {
+    font-size: 2rem;
+  }
+}
+</style>

@@ -1,0 +1,265 @@
+<section class="construccion" id="construccion">
+  <h2>Construcción Especializada</h2>
+  <p class="section-intro">
+    Obra civil y construcción liviana para aplicaciones industriales. 
+    Firmes reforzados, cisternas y cuartos controlados.
+  </p>
+
+  <div class="construccion-grid">
+    <div class="construccion-item">
+      <div class="item-header">
+        <h3>Firmes de Concreto</h3>
+        <span class="item-tag">Alta Resistencia</span>
+      </div>
+      <p>
+        Pisos industriales reforzados con malla electrosoldada y fibra de acero. 
+        Resistencia de 250 kg/cm² a 350 kg/cm². Acabado con helicóptero para superficie 
+        lisa y endurecida. Juntas de dilatación según normativa ACI.
+      </p>
+      <ul class="specs-list">
+        <li>Espesor: 10 cm a 25 cm según carga</li>
+        <li>Refuerzo: Malla 6x6-10/10 + fibra</li>
+        <li>Acabado endurecido con polvo cuarzo</li>
+      </ul>
+    </div>
+
+    <div class="construccion-item">
+      <div class="item-header">
+        <h3>Firmes para Carga de Tráiler</h3>
+        <span class="item-tag">Carga Pesada</span>
+      </div>
+      <p>
+        Firmes reforzados para patios de maniobras, zonas de carga y descarga. 
+        Diseñados para tráfico continuo de tractocamiones y montacargas. 
+        Base granular compactada y concreto de alta resistencia.
+      </p>
+      <ul class="specs-list">
+        <li>Resistencia: 300 kg/cm² - 400 kg/cm²</li>
+        <li>Espesor: 20 cm a 30 cm</li>
+        <li>Base compactada al 95% Proctor</li>
+      </ul>
+    </div>
+
+    <div class="construccion-item">
+      <div class="item-header">
+        <h3>Cisternas para Químicos</h3>
+        <span class="item-tag">Impermeabilizado</span>
+      </div>
+      <p>
+        Construcción de cisternas y tanques de almacenamiento subterráneos para productos 
+        químicos, agua tratada y procesos industriales. Impermeabilización con membranas 
+        especializadas y recubrimientos epóxicos.
+      </p>
+      <ul class="specs-list">
+        <li>Capacidad: 5,000 L a 100,000 L</li>
+        <li>Muros reforzados y losa de fondo</li>
+        <li>Recubrimiento químico-resistente</li>
+      </ul>
+    </div>
+
+    <div class="construccion-item">
+      <div class="item-header">
+        <h3>Cuartos Limpios</h3>
+        <span class="item-tag">Ambiente Controlado</span>
+      </div>
+      <p>
+        Construcción de espacios controlados para manufactura farmacéutica, electrónica 
+        y alimentaria. Panel termoaislante, piso epóxico, sellado hermético y sistemas 
+        de filtración HEPA.
+      </p>
+      <ul class="specs-list">
+        <li>Clasificación ISO 14644</li>
+        <li>Panel sanitario y juntas selladas</li>
+        <li>Piso epóxico conductivo o antiestático</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="construccion-footer">
+    <p class="footer-note">
+      <strong>Nota técnica:</strong> Todos los trabajos se ejecutan con personal capacitado, 
+      equipos calibrados y materiales certificados. Cumplimiento de normativa NOM y ACI donde aplique.
+    </p>
+  </div>
+</section>
+
+<style>
+.construccion {
+  background: var(--gray-dark);
+}
+
+.section-intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.construccion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.construccion-item {
+  background: var(--gray-medium);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease;
+}
+
+.construccion-item:hover {
+  border-color: var(--orange);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.item-header h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+.item-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--orange);
+  background: rgba(196, 90, 26, 0.1);
+  padding: 0.25rem 0.75rem;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.construccion-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.specs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.specs-list li {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.specs-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+}
+
+.construccion-footer {
+  background: var(--gray-light);
+  padding: 1.5rem;
+  border-left: 3px solid var(--orange);
+}
+
+.footer-note {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.footer-note strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .construccion-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .construccion-item {
+    padding: 1.5rem;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .construccion-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-intro {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
+
+  .construccion-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .construccion-item {
+    padding: 1.5rem;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .item-tag {
+    align-self: flex-start;
+  }
+
+  .construccion-item h3 {
+    font-size: 1.125rem;
+  }
+
+  .construccion-item p {
+    font-size: 0.9375rem;
+  }
+
+  .specs-list li {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .construccion-grid {
+    gap: 1.5rem;
+  }
+
+  .construccion-item {
+    padding: 1.25rem;
+  }
+
+  .construccion-footer {
+    padding: 1.25rem;
+  }
+
+  .footer-note {
+    font-size: 0.875rem;
+  }
+}
+</style>

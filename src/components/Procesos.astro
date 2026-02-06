@@ -1,0 +1,289 @@
+<section class="procesos" id="trabajos">
+  <div class="procesos-header">
+    <h2>Trabajos Ejecutados</h2>
+    <p class="section-intro">
+      Registro fotográfico de proyectos en operación. Fabricación, instalación y mantenimiento 
+      de sistemas industriales en plantas de manufactura, almacenes y operaciones del área metropolitana.
+    </p>
+  </div>
+
+  <div class="procesos-grid">
+    <div class="proceso-item">
+      <div class="proceso-image">
+        <img src="/img/ductos.jpeg" alt="Fabricación de ductería industrial en acero al carbón">
+        <div class="proceso-overlay">
+          <span class="proceso-categoria">Fabricación Metalmecánica</span>
+        </div>
+      </div>
+      <div class="proceso-content">
+        <h3>Ductería Industrial en Acero al Carbón</h3>
+        <p>
+          Fabricación e instalación de sistema completo de ductos para extracción de humos 
+          en horno industrial. Diámetro 36" en acero al carbón calibre 14. 
+          Soldadura SMAW y montaje en planta operativa.
+        </p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <div class="proceso-image">
+        <img src="/img/hornos.jpeg" alt="Mantenimiento de ducteros en hornos industriales">
+        <div class="proceso-overlay">
+          <span class="proceso-categoria">Mantenimiento Industrial</span>
+        </div>
+      </div>
+      <div class="proceso-content">
+        <h3>Mantenimiento de Hornos Industriales</h3>
+        <p>
+          Desarmado completo de sistema de ducteros en horno de tratamiento térmico. 
+          Limpieza profunda de incrustaciones, reemplazo de tramos dañados y rearmado. 
+          Trabajo en paro programado de 72 horas.
+        </p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <div class="proceso-image">
+        <img src="/img/soldadura.jpeg" alt="Soldadura y pailería industrial">
+        <div class="proceso-overlay">
+          <span class="proceso-categoria">Pailería</span>
+        </div>
+      </div>
+      <div class="proceso-content">
+        <h3>Soldadura y Fabricación Industrial</h3>
+        <p>
+          Fabricación de tolvas, tanques y recipientes metálicos a medida. 
+          Procesos de soldadura GMAW y SMAW en acero al carbón e inoxidable. 
+          Pruebas de hermeticidad según especificación.
+        </p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <div class="proceso-image">
+        <img src="/img/losa.jpeg" alt="Reparación de losa industrial">
+        <div class="proceso-overlay">
+          <span class="proceso-categoria">Obra Civil</span>
+        </div>
+      </div>
+      <div class="proceso-content">
+        <h3>Reparación de Firmes por Filtración</h3>
+        <p>
+          Reparación de losa industrial afectada por filtraciones de proceso. 
+          Demolición selectiva, impermeabilización de base, colado de concreto 
+          reforzado y acabado endurecido.
+        </p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <div class="proceso-image">
+        <img src="/img/aislamiento.jpeg" alt="Termoaislamiento industrial con fibra mineral">
+        <div class="proceso-overlay">
+          <span class="proceso-categoria">Aislamiento Térmico</span>
+        </div>
+      </div>
+      <div class="proceso-content">
+        <h3>Termoaislamiento con Fibra Mineral</h3>
+        <p>
+          Instalación de aislamiento térmico en ductos de alta temperatura. 
+          Fibra mineral densidad 96 kg/m³, forro de lámina galvanizada calibre 26. 
+          Temperatura de operación hasta 650°C.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="procesos-footer">
+    <p class="footer-disclaimer">
+      Las imágenes corresponden a proyectos reales ejecutados entre 2020 y 2024 en plantas industriales 
+      del área metropolitana de Monterrey. Se omiten detalles de cliente por confidencialidad.
+    </p>
+  </div>
+</section>
+
+<style>
+.procesos {
+  background: var(--dark);
+}
+
+.procesos-header {
+  margin-bottom: 4rem;
+}
+
+.section-intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+.procesos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.proceso-item {
+  background: var(--gray-dark);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease;
+}
+
+.proceso-item:hover {
+  border-color: var(--orange);
+}
+
+.proceso-image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: var(--gray-medium);
+}
+
+.proceso-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.proceso-item:hover .proceso-image img {
+  transform: scale(1.05);
+}
+
+.proceso-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.proceso-categoria {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background: rgba(196, 90, 26, 0.95);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.proceso-content {
+  padding: 2rem;
+}
+
+.proceso-content h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.proceso-content p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.procesos-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-disclaimer {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .procesos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .proceso-image {
+    height: 240px;
+  }
+
+  .proceso-content {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .procesos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .proceso-image {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .procesos-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-intro {
+    font-size: 1.125rem;
+  }
+
+  .procesos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .proceso-image {
+    height: 240px;
+  }
+
+  .proceso-content {
+    padding: 1.5rem;
+  }
+
+  .proceso-content h3 {
+    font-size: 1.125rem;
+  }
+
+  .proceso-content p {
+    font-size: 0.875rem;
+  }
+
+  .proceso-categoria {
+    font-size: 0.6875rem;
+    padding: 0.4rem 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .procesos-grid {
+    gap: 1.5rem;
+  }
+
+  .proceso-image {
+    height: 220px;
+  }
+
+  .proceso-content {
+    padding: 1.25rem;
+  }
+
+  .footer-disclaimer {
+    font-size: 0.8125rem;
+  }
+}
+</style>

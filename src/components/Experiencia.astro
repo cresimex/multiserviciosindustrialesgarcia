@@ -1,0 +1,189 @@
+<section class="experiencia" id="experiencia">
+  <div class="experiencia-header">
+    <h2>Capacidad Técnica</h2>
+    <p class="section-intro">
+      Desde 1999 ejecutamos proyectos de infraestructura industrial, fabricación metalmecánica 
+      y construcción especializada para plantas, almacenes y operaciones industriales.
+    </p>
+  </div>
+
+  <div class="capacidades-grid">
+    <div class="capacidad-item">
+      <h3>Fabricación e Instalación</h3>
+      <p>
+        Fabricamos e instalamos sistemas completos: ductería industrial, extractores, 
+        estructuras metálicas y equipos diseñados según especificaciones técnicas del cliente.
+      </p>
+    </div>
+
+    <div class="capacidad-item">
+      <h3>Mantenimiento Industrial</h3>
+      <p>
+        Mantenimiento correctivo y preventivo de sistemas de ventilación, hornos industriales, 
+        ducteros y equipos. Desarmado, limpieza profunda y rearmado con cumplimiento de normas.
+      </p>
+    </div>
+
+    <div class="capacidad-item">
+      <h3>Obra Civil Especializada</h3>
+      <p>
+        Firmes de concreto para carga pesada, cisternas para químicos, cuartos limpios 
+        y reparaciones estructurales. Trabajo bajo normativa industrial.
+      </p>
+    </div>
+
+    <div class="capacidad-item">
+      <h3>Proyectos de Ingeniería</h3>
+      <p>
+        Desarrollo de proyectos completos: levantamiento, diseño, fabricación, instalación 
+        y puesta en marcha. Coordinación con equipos de ingeniería del cliente.
+      </p>
+    </div>
+  </div>
+
+  <div class="experiencia-footer">
+    <div class="footer-stats">
+      <div class="stat">
+        <strong>Industrias atendidas:</strong> Alimentos, automotriz, química, manufactura, 
+        almacenamiento, construcción.
+      </div>
+      <div class="stat">
+        <strong>Zona de operación:</strong> Monterrey, San Pedro, Santa Catarina, 
+        Apodaca, García, Escobedo, Guadalupe.
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.experiencia {
+  background: var(--gray-dark);
+}
+
+.experiencia-header {
+  max-width: 800px;
+  margin-bottom: 4rem;
+}
+
+.section-intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-top: 1.5rem;
+}
+
+.capacidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.capacidad-item {
+  background: var(--gray-medium);
+  padding: 2rem;
+  border-left: 3px solid var(--border);
+  transition: border-color 0.2s ease;
+}
+
+.capacidad-item:hover {
+  border-left-color: var(--orange);
+}
+
+.capacidad-item h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.capacidad-item p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.experiencia-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.footer-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.stat strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .capacidades-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .capacidad-item {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .capacidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experiencia-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-intro {
+    font-size: 1.125rem;
+  }
+
+  .capacidades-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .capacidad-item {
+    padding: 1.5rem;
+  }
+
+  .capacidad-item h3 {
+    font-size: 1.125rem;
+  }
+
+  .capacidad-item p {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experiencia-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+  }
+
+  .capacidades-grid {
+    gap: 1.25rem;
+  }
+
+  .capacidad-item {
+    padding: 1.25rem;
+  }
+}
+</style>

@@ -1,3 +1,56 @@
+---
+const procesos = [
+  {
+    titulo: "Ductería Industrial en Acero al Carbón",
+    categoria: "Fabricación Metalmecánica",
+    descripcion: `Fabricación e instalación de sistema completo de ductos para extracción de humos 
+    en horno industrial. Diámetro 36" en acero al carbón calibre 14. 
+    Soldadura SMAW y montaje en planta operativa.`,
+    imagenes: [
+      { src: "/img/ductos.jpeg", label: "Antes" },
+      { src: "/img/ductos_durante.jpeg", label: "Durante" },
+      { src: "/img/ductos_despues.jpeg", label: "Después" }
+    ]
+  },
+  {
+    titulo: "Mantenimiento de Hornos Industriales",
+    categoria: "Mantenimiento Industrial",
+    descripcion: `Desarmado completo de sistema de ducteros en horno de tratamiento térmico. 
+    Limpieza profunda de incrustaciones, reemplazo de tramos dañados y rearmado. 
+    Trabajo en paro programado de 72 horas.`,
+    imagenes: [
+      { src: "/img/hornos.jpeg", label: "Limpieza" },
+      { src: "/img/desarmado_ductos.jpeg", label: "Desarmado" }
+    ]
+  },
+  {
+    titulo: "Soldadura y Fabricación Industrial",
+    categoria: "Pailería",
+    descripcion: `Fabricación de tolvas, tanques y recipientes metálicos a medida. 
+          Procesos de soldadura GMAW y SMAW en acero al carbón e inoxidable. 
+          Pruebas de hermeticidad según especificación.`,
+    imagenes: [
+      { src: "/img/soldadura_paileria.jpeg", label: "Producto terminado" }
+    ]
+  },
+  {
+    titulo: "Reparación de Firmes por filtración",
+    categoria: "Obra civil",
+    descripcion: `Reparación de losa industrial afectada por filtraciones de proceso. 
+          Demolición selectiva, impermeabilización de base, colado de concreto 
+          reforzado y acabado endurecido.`,
+    imagenes: [
+      { src: "/img/losa.jpeg", label: "Proceso de reparación" }
+    ],
+    media: {
+    type: "video",
+    src: "/img/Reparación de losa edificio filtraciones_ejecucion.mp4",
+    poster: "/img/losa.jpeg"
+    }
+  },
+];
+---
+
 <section class="procesos" id="trabajos">
   <div class="procesos-header">
     <h2>Trabajos Ejecutados</h2>
@@ -8,91 +61,54 @@
   </div>
 
   <div class="procesos-grid">
+  {procesos.map((proceso, index) => (
     <div class="proceso-item">
       <div class="proceso-image">
-        <img src="/img/ductos.jpeg" alt="Fabricación de ductería industrial en acero al carbón">
-        <div class="proceso-overlay">
-          <span class="proceso-categoria">Fabricación Metalmecánica</span>
-        </div>
-      </div>
-      <div class="proceso-content">
-        <h3>Ductería Industrial en Acero al Carbón</h3>
-        <p>
-          Fabricación e instalación de sistema completo de ductos para extracción de humos 
-          en horno industrial. Diámetro 36" en acero al carbón calibre 14. 
-          Soldadura SMAW y montaje en planta operativa.
-        </p>
-      </div>
-    </div>
+        {proceso.media?.type === "video" ? (
+    <video
+      src={proceso.media.src}
+      poster={proceso.media.poster}
+      muted
+      autoplay
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+  ) : (
+    <img
+      src={proceso.imagenes[0].src}
+      alt={proceso.titulo}
+      loading="eager"
+      fetchpriority="high"
+    />
+  )}
 
-    <div class="proceso-item">
-      <div class="proceso-image">
-        <img src="/img/hornos.jpeg" alt="Mantenimiento de ducteros en hornos industriales">
-        <div class="proceso-overlay">
-          <span class="proceso-categoria">Mantenimiento Industrial</span>
-        </div>
-      </div>
-      <div class="proceso-content">
-        <h3>Mantenimiento de Hornos Industriales</h3>
-        <p>
-          Desarmado completo de sistema de ducteros en horno de tratamiento térmico. 
-          Limpieza profunda de incrustaciones, reemplazo de tramos dañados y rearmado. 
-          Trabajo en paro programado de 72 horas.
-        </p>
-      </div>
-    </div>
-
-    <div class="proceso-item">
-      <div class="proceso-image">
-        <img src="/img/soldadura_paileria.jpeg" alt="Soldadura y pailería industrial">
-        <div class="proceso-overlay">
-          <span class="proceso-categoria">Pailería</span>
-        </div>
-      </div>
-      <div class="proceso-content">
-        <h3>Soldadura y Fabricación Industrial</h3>
-        <p>
-          Fabricación de tolvas, tanques y recipientes metálicos a medida. 
-          Procesos de soldadura GMAW y SMAW en acero al carbón e inoxidable. 
-          Pruebas de hermeticidad según especificación.
-        </p>
-      </div>
-    </div>
-
-    <div class="proceso-item">
-      <div class="proceso-image">
-        <img src="/img/losa.jpeg" alt="Reparación de losa industrial">
-        <div class="proceso-overlay">
-          <span class="proceso-categoria">Obra Civil</span>
-        </div>
-      </div>
-      <div class="proceso-content">
-        <h3>Reparación de Firmes por Filtración</h3>
-        <p>
-          Reparación de losa industrial afectada por filtraciones de proceso. 
-          Demolición selectiva, impermeabilización de base, colado de concreto 
-          reforzado y acabado endurecido.
-        </p>
-      </div>
-    </div>
-
-    <div class="proceso-item">
-      <div class="proceso-image">
-        <img src="/img/aislamiento.jpeg" alt="Termoaislamiento industrial con fibra mineral">
-        <div class="proceso-overlay">
-          <span class="proceso-categoria">Aislamiento Térmico</span>
-        </div>
-      </div>
-      <div class="proceso-content">
-        <h3>Termoaislamiento con Fibra Mineral</h3>
-        <p>
-          Instalación de aislamiento térmico en ductos de alta temperatura. 
-          Fibra mineral densidad 96 kg/m³, forro de lámina galvanizada calibre 26. 
-          Temperatura de operación hasta 650°C.
-        </p>
-      </div>
-    </div>
+  <div class="proceso-overlay">
+    <span class="proceso-categoria">{proceso.categoria}</span>
   </div>
+
+  {proceso.imagenes.length > 1 && (
+    <div class="proceso-thumbs">
+      {proceso.imagenes.map((img) => (
+        <img
+          src={img.src}
+          alt={img.label}
+          loading="lazy"
+          onclick="this.closest('.proceso-image').querySelector('video, img').src = this.src"
+        />
+      ))}
+    </div>
+  )}
+      </div>
+
+      <div class="proceso-content">
+        <h3>{proceso.titulo}</h3>
+        <p>{proceso.descripcion}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
   <div class="procesos-footer">
     <p class="footer-disclaimer">
@@ -207,6 +223,38 @@
   margin: 0 auto;
   font-style: italic;
 }
+.proceso-thumbs {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  gap: 0.4rem;
+  z-index: 2;
+}
+
+.proceso-thumbs img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--gray-dark);
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.proceso-thumbs img:hover {
+  opacity: 1;
+  border-color: var(--orange);
+}
+
+.proceso-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 9 / 16;
+  display: block;
+}
+
 
 @media (max-width: 768px) {
   .procesos-grid {

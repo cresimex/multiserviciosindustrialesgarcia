@@ -8,7 +8,11 @@ const procesos = [
     Soldadura SMAW y montaje en planta operativa.`,
     imagenes: [
       { src: "/img/ductos.jpeg", label: "Antes" },
-      { src: "/img/ductos_durante.jpeg", label: "Durante" },
+      media: {
+    type: "video",
+    src: "/img/ductos-acero.mp4",
+    poster: "/img/ductos.jpeg"
+    },
       { src: "/img/ductos_despues.jpeg", label: "Después" }
     ]
   },
